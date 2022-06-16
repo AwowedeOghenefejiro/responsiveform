@@ -1,0 +1,123 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+body {
+    font-family: "Poppins";
+    Font-size: 16px;
+    font-weight: 400;
+    background-image: url("./Registration-form/images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+}
+
+.text {
+    float: left;
+    margin-top: 200px;
+    margin-left: 50px;
+    color: white;
+}
+
+.text h1 {
+    font-size: 50px;
+}
+
+.form-container {
+    padding: 100px;
+    text-align: center;
+    float: right;
+    margin-right: 50px;
+    width: 23rem;
+}
+
+form {
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 8px 2px -2px hsl(246, 25%, 77%);
+    resize: vertical;
+}
+
+.form-header {
+    color: hsl(246, 25%, 77%);
+    border-radius: 7px;
+    padding: 0.5px;
+    margin-bottom: 1rem;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0 8px 2px -2px hsl(246, 25%, 77%);
+}
+
+#fname, #lname, #email, #pword {
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+}
+
+
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 18px;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    margin-top: 20px;
+    width: 350px;
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+span {
+    padding-top: 5px;
+    color: hsl(0, 100%, 74%);
+}
+
+
+
+@media only screen and (max-width:375px) {
+    body {
+        background-image: url(./Registration-form/images/bg-intro-mobile.png);
+    }
+
+    .text {
+        text-align: center;
+        width: 69%;
+        padding: 0px;
+        margin: none;
+        font-size: 13px;
+        overflow-wrap: break-word;
+        display: block;
+        float: none;
+        margin-left: 10px;
+    }
+
+    #fname, #lname, #email, #pword {
+        margin: 10px 0;
+        width: 200px;
+    }
+
+    .form-container {
+        float: none;
+        padding-left: 0.1px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        
+    }
+
+    button {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+
+}
+
+@media only screen and (max-width:1440px) {
+    body {
+        max-width: 1920px;
+    }
+}
